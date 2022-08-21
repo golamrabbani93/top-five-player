@@ -45,3 +45,19 @@ body {
 .dark-text {
 	color: #b3b3b3;
 }
+/* !header-style starts  */
+header {
+	/* background-color: #000000; */
+	background: url("../images/mbape-head.png"), #000000;
+	background-repeat: no-repeat;
+	background-position: left bottom;
+}
+.container-fliud {
+	background-image: url("../images/psg-head.png");
+	background-repeat: no-repeat;
+	background-position: right 27%;
+}
+.header-text {
+	padding: 100px;
+}
+/* !header-style ends  */
