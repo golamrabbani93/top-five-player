@@ -70,4 +70,17 @@ main {
 .card-bg {
 	background: #0d0d0d;
 }
+
+.selected,
+.budget {
+	background: #0d0d0d;
+}
+
+input {
+	background: #0d0d0d;
+	color: #ffff;
+	padding-left: 5px;
+	border: 1px solid #fff;
+	border-radius: 5px;
+}
 /* !main-style ends  */
