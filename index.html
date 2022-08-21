@@ -165,23 +165,36 @@
 								<div class="expenses pt-4">
 									<p class="mx-3">
 										<span class="me-4 dark-text">Player Expenses</span
-										><span class="ms-3">$<span id="total-player-expenses">5000</span> </span>
+										><span class="ms-3">$<span id="total-player-expenses">0</span> </span>
 									</p>
 									<div class="row">
-										<div class="col-5"><span class="text-center ps-3 dark-text">Manager</span></div>
-										<div class="col-7"><input type="text" class="w-75" /></div>
+										<div class="col-5">
+											<span class="text-center ps-3 dark-text">Manager</span>
+										</div>
+										<div class="col-7">
+											<input id="manager-price" type="text" class="w-75" />
+										</div>
 									</div>
 									<div class="row pt-3">
-										<div class="col-5"><span class="text-center ps-3 dark-text">Coach</span></div>
-										<div class="col-7"><input type="text" class="w-75" /></div>
+										<div class="col-5">
+											<span class="text-center ps-3 dark-text">Coach</span>
+										</div>
+										<div class="col-7">
+											<input id="coach-price" type="text" class="w-75" />
+										</div>
 									</div>
-									<button href="dd" class="font-700 btn btn-primary mt-3 d-block w-75 mx-auto">
+									<button
+										id="total-calculate"
+										class="font-700 btn btn-primary mt-3 d-block w-75 mx-auto"
+									>
 										Calculate Total
 									</button>
 
 									<p class="mx-5 mt-3 pb-3">
 										<span class="me-5 dark-text">Total</span
-										><span class="ms-5 text-end head-color">$5000</span>
+										><span class="ms-5 text-end head-color"
+											>$<span id="total-expenses">0</span></span
+										>
 									</p>
 								</div>
 							</div>

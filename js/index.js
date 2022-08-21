@@ -40,3 +40,21 @@ document.getElementById("calculate").addEventListener("click", function () {
 	// !get total-player-expenses element by id and show total Player Price
 	getElementShow("total-player-expenses", totalPlayerPrice);
 });
+
+// !create total  calculation with manager and coach
+document.getElementById("total-calculate").addEventListener("click", function () {
+	// !get Manager Expenses
+	const ManagerPrice = getInputValue("manager-price");
+	// !get Coach Expenses
+	const CoachPrice = getInputValue("coach-price");
+	// !get total-player-expenses Expenses
+	const totalPlayer = document.getElementById("total-player-expenses");
+	const totalPlayerPriceString = totalPlayer.innerText;
+	const totalPlayerPrice = parseInt(totalPlayerPriceString);
+
+	// !make total expenses calculate
+	const totalExpenses = totalPlayerPrice + CoachPrice + ManagerPrice;
+
+	// !get total-expenses element by id and show total Expenses
+	getElementShow("total-expenses", totalExpenses);
+});
