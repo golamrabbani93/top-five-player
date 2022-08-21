@@ -61,3 +61,13 @@ header {
 	padding: 100px;
 }
 /* !header-style ends  */
+/* !main-style starts  */
+
+main {
+	background: #151515;
+	padding-top: 75px;
+}
+.card-bg {
+	background: #0d0d0d;
+}
+/* !main-style ends  */
