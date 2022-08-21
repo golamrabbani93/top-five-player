@@ -66,6 +66,7 @@ header {
 main {
 	background: #151515;
 	padding-top: 75px;
+	padding-bottom: 100px;
 }
 .card-bg {
 	background: #0d0d0d;
@@ -84,3 +85,13 @@ input {
 	border-radius: 5px;
 }
 /* !main-style ends  */
+/* !Footer-style start  */
+footer {
+	background: #151515;
+}
+.footer-text {
+	padding: 20px 0;
+	text-align: center;
+}
+
+/* !Footer-style ends  */
