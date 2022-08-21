@@ -84,6 +84,11 @@ input {
 	border: 1px solid #fff;
 	border-radius: 5px;
 }
+.btn.disabled,
+.btn:disabled,
+fieldset:disabled .btn {
+	background-color: #a2a9af;
+}
 /* !main-style ends  */
 /* !Footer-style start  */
 footer {
