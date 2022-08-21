@@ -4,7 +4,14 @@ function getInputValue(id) {
 	const inputValue = document.getElementById(id);
 	const inputValueString = inputValue.value;
 	const input = parseInt(inputValueString);
-	return input;
+	// !IF Input is Not A Number To show Below Alert
+	if (isNaN(input)) {
+		// !Alert Massage
+		alert("Please Input Price with Valid Number (Ex:1000)");
+		return 0;
+	} else {
+		return input;
+	}
 }
 
 // !create common function get element text and show inner text by id
