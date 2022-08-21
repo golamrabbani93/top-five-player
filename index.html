@@ -154,16 +154,18 @@
 										<div class="col-5">
 											<span class="text-center ps-3 dark-text">Per Player</span>
 										</div>
-										<div class="col-7"><input type="text" class="w-75" /></div>
+										<div class="col-7">
+											<input id="per-player-price" type="text" class="w-75" />
+										</div>
 									</div>
-									<button class="font-700 btn btn-primary mt-3 d-block w-75 mx-auto">
+									<button id="calculate" class="font-700 btn btn-primary mt-3 d-block w-75 mx-auto">
 										Calculate
 									</button>
 								</div>
 								<div class="expenses pt-4">
 									<p class="mx-3">
 										<span class="me-4 dark-text">Player Expenses</span
-										><span class="ms-3">$5000</span>
+										><span class="ms-3">$<span id="total-player-expenses">5000</span> </span>
 									</p>
 									<div class="row">
 										<div class="col-5"><span class="text-center ps-3 dark-text">Manager</span></div>

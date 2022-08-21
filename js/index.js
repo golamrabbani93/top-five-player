@@ -26,3 +26,17 @@ for (const playerButton of playeButtons) {
 		}
 	});
 }
+
+// !create per player calculation
+document.getElementById("calculate").addEventListener("click", function () {
+	// !get per player price
+	const perplayerPrice = getInputValue("per-player-price");
+
+	// !get player List Length;
+	const playerListLength = document.querySelectorAll("#player-list>li").length;
+
+	// !calculate  players *per player price
+	const totalPlayerPrice = perplayerPrice * playerListLength;
+	// !get total-player-expenses element by id and show total Player Price
+	getElementShow("total-player-expenses", totalPlayerPrice);
+});
